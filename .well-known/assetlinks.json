@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "id.upi.pgsd.congklakfpbkpk",
+      "sha256_cert_fingerprints": [
+        "CF:11:9F:60:B6:BB:6D:B5:7B:61:F7:17:5E:3B:77:66:01:58:FE:B5:A0:D3:DA:A3:EA:2C:17:9C:52:84:C9:8C"
+      ]
+    }
+  }
+]
