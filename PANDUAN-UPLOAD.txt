@@ -1,0 +1,21 @@
+PANDUAN SINGKAT UNGGAH WEBSITE
+
+1. Ekstrak file ZIP ini.
+2. Buka:
+   https://github.com/dika-81/dika-81.github.io
+3. Klik Add file > Upload files.
+4. Seret semua file berikut:
+   - index.html
+   - 404.html
+   - favicon.svg
+   - CNAME
+   - .nojekyll
+5. Klik Commit changes.
+6. Masuk ke Settings > Pages.
+7. Pilih branch main dan folder /(root), lalu Save.
+8. Pada Custom domain masukkan:
+   andikaarisetyawan.com
+
+PENTING:
+- Jangan unggah folder website-pribadi-andika sebagai satu folder.
+- Yang harus berada di halaman utama repository adalah file index.html.
