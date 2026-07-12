@@ -574,6 +574,15 @@
     }
   </style>
 </head>
+  <script>
+  document.querySelectorAll('.project-card').forEach(card => {
+    const badge = card.querySelector('.project-icon');
+    const judul = card.querySelector('h3');
+    if (badge && judul) {
+      badge.textContent = judul.textContent.trim().charAt(0).toUpperCase();
+    }
+  });
+  </script>
 <body>
   <header class="site-header">
     <div class="container nav">
