@@ -10,7 +10,7 @@
 <title>Anates Online — Analisis Butir Soal Berbasis Web Gratis</title>
 
 <!-- META DESCRIPTION: ~155 karakter. Tidak menaikkan ranking, tapi menentukan CTR di hasil pencarian. -->
-<meta name="description" content="Anates online gratis untuk analisis butir soal: validitas, reliabilitas, daya pembeda, dan tingkat kesukaran. Berjalan di browser, tanpa instal.">
+<meta name="description" content="Anates online gratis untuk analisis butir soal pilihan ganda dan uraian: tingkat kesukaran, daya pembeda, reliabilitas, analisis pengecoh. Hasil unduh PDF.">
 
 <meta name="author" content="Dr. Andika Arisetyawan, M.Si.">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -24,7 +24,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dr. Andika Arisetyawan, M.Si.">
 <meta property="og:title" content="Anates Online — Analisis Butir Soal Berbasis Web">
-<meta property="og:description" content="Analisis butir soal gratis di browser: validitas, reliabilitas, daya pembeda, tingkat kesukaran. Tanpa instal.">
+<meta property="og:description" content="Analisis butir soal pilihan ganda dan uraian di browser: daya pembeda, reliabilitas, analisis pengecoh, korelasi butir–total. Hasil bisa diunduh PDF.">
 <meta property="og:url" content="https://andikaarisetyawan.com/anates/">
 <meta property="og:locale" content="id_ID">
 <!-- TODO: siapkan gambar 1200x630 px di path ini, atau arahkan ke gambar lain milikmu. Tanpa ini, preview share tidak punya thumbnail. -->
@@ -32,7 +32,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Anates Online — Analisis Butir Soal Berbasis Web">
-<meta name="twitter:description" content="Analisis butir soal gratis di browser: validitas, reliabilitas, daya pembeda, tingkat kesukaran.">
+<meta name="twitter:description" content="Analisis butir soal pilihan ganda & uraian: daya pembeda, reliabilitas, analisis pengecoh. Hasil unduh PDF, tanpa instal.">
 
 <!-- ============================================================
      STRUCTURED DATA (Schema.org / JSON-LD).
@@ -43,12 +43,12 @@
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "Anates HTML — Analisis Butir Soal Online",
+  "name": "Anates Online — Analisis Butir Soal",
   "url": "https://andikaarisetyawan.com/anates/",
   "applicationCategory": "EducationalApplication",
   "operatingSystem": "Web browser (semua platform)",
   "inLanguage": "id",
-  "description": "Aplikasi web untuk analisis butir soal: menghitung validitas, reliabilitas, daya pembeda, dan tingkat kesukaran. Berjalan penuh di peramban tanpa instalasi.",
+  "description": "Aplikasi web untuk analisis butir soal pilihan ganda dan uraian: menghitung tingkat kesukaran, daya pembeda, korelasi butir–total, reliabilitas, dan kualitas pengecoh, dengan hasil yang dapat diunduh sebagai PDF. Berjalan penuh di peramban tanpa instalasi.",
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -88,18 +88,28 @@
     },
     {
       "@type": "Question",
+      "name": "Soal jenis apa yang bisa dianalisis?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Soal pilihan ganda maupun uraian (essay). Untuk pilihan ganda, aplikasi juga menganalisis kualitas pengecoh pada tiap opsi." }
+    },
+    {
+      "@type": "Question",
+      "name": "Format data apa yang bisa dimasukkan?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Data dapat ditempel langsung dari Excel atau Spreadsheet (pemisah Tab) maupun dari CSV; pemisah kolom terdeteksi otomatis. Kunci jawaban dan jawaban peserta ditulis dalam huruf A sampai E." }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah hasilnya bisa diunduh?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ya. Laporan lengkap analisis butir soal dapat diunduh dalam bentuk PDF untuk dokumentasi dan pelaporan." }
+    },
+    {
+      "@type": "Question",
       "name": "Apa bedanya dengan Anates versi desktop?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Versi ini berbasis web sehingga berjalan di perangkat apa pun tanpa instalasi Windows, sementara metrik yang dihitung tetap serupa: validitas, reliabilitas, daya pembeda, dan tingkat kesukaran." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Versi ini berbasis web sehingga berjalan di perangkat apa pun tanpa instalasi Windows, sementara indikator yang dihitung tetap lengkap: tingkat kesukaran, daya pembeda, korelasi butir–total, reliabilitas, dan analisis pengecoh." }
     },
     {
       "@type": "Question",
       "name": "Apakah data soal saya aman?",
       "acceptedAnswer": { "@type": "Answer", "text": "Seluruh perhitungan berjalan di dalam peramban (sisi klien). Data jawaban tidak diunggah atau dikirim ke server mana pun." }
-    },
-    {
-      "@type": "Question",
-      "name": "Siapa yang cocok memakai aplikasi ini?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Guru, dosen, mahasiswa, dan peneliti yang perlu memeriksa kualitas butir soal atau instrumen tes secara cepat." }
     }
   ]
 }
@@ -110,11 +120,11 @@
   "@type": "HowTo",
   "name": "Cara menggunakan Anates Online",
   "step": [
-    { "@type": "HowToStep", "position": 1, "name": "Buka aplikasi", "text": "Buka Anates Online di peramban." },
-    { "@type": "HowToStep", "position": 2, "name": "Masukkan data", "text": "Muat data pola jawaban siswa beserta kunci jawaban." },
-    { "@type": "HowToStep", "position": 3, "name": "Jalankan analisis", "text": "Proses data untuk menghitung seluruh indeks butir." },
-    { "@type": "HowToStep", "position": 4, "name": "Baca hasil", "text": "Tinjau validitas, reliabilitas, daya pembeda, dan tingkat kesukaran." },
-    { "@type": "HowToStep", "position": 5, "name": "Simpan hasil", "text": "Simpan atau ekspor ringkasan analisis untuk laporan." }
+    { "@type": "HowToStep", "position": 1, "name": "Buka aplikasi", "text": "Jalankan Anates Online di peramban." },
+    { "@type": "HowToStep", "position": 2, "name": "Pilih jenis soal", "text": "Tentukan Pilihan Ganda atau Uraian." },
+    { "@type": "HowToStep", "position": 3, "name": "Tempel data", "text": "Salin kunci jawaban dan jawaban peserta dari Excel, Spreadsheet, atau CSV." },
+    { "@type": "HowToStep", "position": 4, "name": "Jalankan analisis", "text": "Proses seluruh indikator butir sekaligus." },
+    { "@type": "HowToStep", "position": 5, "name": "Unduh hasil", "text": "Simpan laporan lengkap dalam bentuk PDF." }
   ]
 }
 </script>
@@ -166,7 +176,7 @@
   .hero{padding:34px 0 46px}
   .eyebrow{font-size:13px;letter-spacing:.11em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:0 0 14px}
   h1{font-family:var(--serif);font-weight:600;font-size:clamp(2rem,6vw,3.1rem);line-height:1.1;margin:0 0 18px;letter-spacing:-.5px}
-  .lead{font-size:clamp(1.05rem,2.4vw,1.22rem);color:#33454f;max-width:44ch;margin:0 0 26px}
+  .lead{font-size:clamp(1.05rem,2.4vw,1.22rem);color:#33454f;max-width:48ch;margin:0 0 26px}
   .cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
   .btn{display:inline-block;padding:13px 24px;border-radius:8px;font-weight:600;font-size:16px;border:1.5px solid transparent}
   .btn-primary{background:var(--teal);color:#fff}
@@ -188,14 +198,15 @@
   .card h3{margin:0 0 8px;font-size:1.08rem;color:var(--teal)}
   .card p{margin:0;font-size:15.5px;color:#3c4b55}
 
-  /* steps */
+  /* steps — lingkaran nomor patokannya left:0 untuk SEMUA item (termasuk terakhir),
+     garis penghubung digambar sebagai ::after absolut, bukan border-left+margin. */
   ol.steps{list-style:none;counter-reset:s;margin:0;padding:0}
-  ol.steps li{counter-increment:s;position:relative;padding:0 0 20px 52px;margin:0}
-  ol.steps li:not(:last-child){border-left:2px solid var(--surface-2);margin-left:17px;padding-left:35px}
+  ol.steps li{counter-increment:s;position:relative;padding:0 0 22px 54px;margin:0}
+  ol.steps li:last-child{padding-bottom:0}
+  ol.steps li:not(:last-child)::after{content:"";position:absolute;left:17px;top:4px;bottom:0;width:2px;background:var(--surface-2)}
   ol.steps li::before{content:counter(s);position:absolute;left:0;top:-2px;width:36px;height:36px;
     background:var(--teal);color:#fff;border-radius:50%;display:grid;place-items:center;
-    font-family:var(--serif);font-size:16px;margin-left:-17px}
-  ol.steps li:last-child{padding-left:52px}
+    font-family:var(--serif);font-size:16px;z-index:1}
   ol.steps strong{display:block;margin-bottom:2px}
   ol.steps span{color:var(--muted);font-size:15.5px}
 
@@ -262,16 +273,16 @@
 <main id="konten">
   <div class="wrap">
     <section class="hero" style="border-top:none">
-      <p class="eyebrow">Aplikasi Analisis · Berbasis Web</p>
+      <p class="eyebrow">Classical Test Theory · Berbasis Web</p>
       <h1>Anates Online — Analisis Butir Soal Berbasis Web</h1>
-      <p class="lead">Analisis butir soal langsung di peramban: hitung validitas, reliabilitas,
-      daya pembeda, dan tingkat kesukaran tanpa memasang aplikasi apa pun.</p>
+      <p class="lead">Analisis butir soal pilihan ganda dan uraian langsung di peramban:
+      tingkat kesukaran, daya pembeda, reliabilitas, korelasi butir–total, hingga analisis
+      pengecoh — hasilnya bisa diunduh sebagai PDF, tanpa memasang aplikasi apa pun.</p>
       <div class="cta-row">
-        <!-- TODO: setelah aplikasi di-host di bawah domainmu (mis. /anates/app/), ganti tautan ini. -->
-        <a class="btn btn-primary" href="https://dika-81.github.io/anates-html/" rel="noopener">Buka aplikasi</a>
+        <a class="btn btn-primary" href="https://andikaarisetyawan.com/anates-html/" rel="noopener">Buka aplikasi</a>
         <a class="btn btn-ghost" href="#tentang">Pelajari dulu</a>
       </div>
-      <p class="trust"><span>Gratis</span> · <span>Tanpa instal</span> · <span>Berjalan di browser</span></p>
+      <p class="trust"><span>Gratis</span> · <span>Tanpa instal</span> · <span>Hasil unduh PDF</span></p>
     </section>
   </div>
 
@@ -280,49 +291,59 @@
       <h2>Apa itu Anates?</h2>
       <p>Anates adalah alat analisis butir soal yang membantu pendidik dan peneliti menilai
       kualitas setiap butir dalam sebuah tes. Setelah siswa mengerjakan soal, hasil jawaban
-      dapat diolah untuk mengetahui butir mana yang sudah baik dan butir mana yang perlu
-      diperbaiki atau diganti.</p>
-      <p>Versi web ini menjalankan seluruh perhitungan di dalam peramban, sehingga bisa dipakai
-      di komputer maupun ponsel tanpa pemasangan dan tanpa mengirim data ke mana pun.</p>
+      diolah untuk mengetahui butir mana yang sudah baik dan butir mana yang perlu diperbaiki
+      atau diganti.</p>
+      <p>Versi web ini mendukung soal pilihan ganda maupun uraian, menjalankan seluruh
+      perhitungan di dalam peramban, dan menyediakan hasil yang dapat diunduh sebagai PDF —
+      bisa dipakai di komputer maupun ponsel tanpa pemasangan dan tanpa mengirim data ke mana pun.</p>
     </section>
 
     <section id="analisis">
       <h2>Yang dianalisis</h2>
-      <p class="sub">Empat indikator utama kualitas butir soal, dihitung otomatis dari data jawaban.</p>
+      <p class="sub">Indikator kualitas butir soal, dihitung otomatis dari data jawaban peserta.</p>
       <div class="grid">
         <div class="card">
-          <h3>Validitas butir</h3>
-          <p>Mengukur sejauh mana skor sebuah butir sejalan dengan skor total, sehingga butir
-          benar-benar mengukur kemampuan yang sama dengan tesnya.</p>
-        </div>
-        <div class="card">
-          <h3>Reliabilitas</h3>
-          <p>Menunjukkan konsistensi tes secara keseluruhan — seberapa stabil hasil pengukuran
-          jika tes diberikan pada kondisi yang setara.</p>
+          <h3>Tingkat kesukaran</h3>
+          <p>Proporsi peserta yang menjawab benar, untuk menakar apakah butir tergolong mudah,
+          sedang, atau sukar bagi kelompoknya.</p>
         </div>
         <div class="card">
           <h3>Daya pembeda</h3>
-          <p>Menilai kemampuan butir membedakan siswa berkemampuan tinggi dari yang rendah.
-          Butir dengan daya pembeda baik memisahkan keduanya dengan jelas.</p>
+          <p>Kemampuan butir membedakan peserta kelompok atas dan bawah (bawaan: metode 27%).
+          Butir yang baik memisahkan keduanya dengan jelas.</p>
         </div>
         <div class="card">
-          <h3>Tingkat kesukaran</h3>
-          <p>Proporsi siswa yang menjawab benar. Membantu menakar apakah butir tergolong mudah,
-          sedang, atau sukar bagi kelompok peserta.</p>
+          <h3>Korelasi butir–total</h3>
+          <p>Sejauh mana skor sebuah butir sejalan dengan skor total tes — indikator validitas
+          internal butir terhadap keseluruhan instrumen.</p>
+        </div>
+        <div class="card">
+          <h3>Reliabilitas</h3>
+          <p>Konsistensi internal tes secara keseluruhan: seberapa stabil hasil pengukuran pada
+          kondisi yang setara.</p>
+        </div>
+        <div class="card">
+          <h3>Kualitas pengecoh</h3>
+          <p>Untuk soal pilihan ganda, menilai seberapa efektif tiap opsi salah (pengecoh)
+          berfungsi menarik peserta yang belum menguasai materi.</p>
+        </div>
+        <div class="card">
+          <h3>Rekap keputusan butir</h3>
+          <p>Ringkasan keputusan tiap butir — diterima, direvisi, atau ditolak — dari gabungan
+          seluruh indikator di atas.</p>
         </div>
       </div>
     </section>
 
     <section id="cara">
       <h2>Cara menggunakan</h2>
-      <p class="sub">Lima langkah dari data mentah ke hasil analisis.</p>
-      <!-- TODO: sesuaikan teks langkah dengan alur nyata aplikasimu. -->
+      <p class="sub">Lima langkah dari data mentah ke laporan PDF.</p>
       <ol class="steps">
         <li><strong>Buka aplikasi</strong><span>Jalankan Anates Online di peramban, tanpa instalasi.</span></li>
-        <li><strong>Masukkan data</strong><span>Muat pola jawaban siswa beserta kunci jawaban.</span></li>
-        <li><strong>Jalankan analisis</strong><span>Proses data untuk menghitung seluruh indeks butir.</span></li>
-        <li><strong>Baca hasil</strong><span>Tinjau validitas, reliabilitas, daya pembeda, dan tingkat kesukaran.</span></li>
-        <li><strong>Simpan hasil</strong><span>Ekspor atau simpan ringkasan untuk laporan dan tindak lanjut.</span></li>
+        <li><strong>Pilih jenis soal</strong><span>Tentukan Pilihan Ganda atau Uraian/Essay.</span></li>
+        <li><strong>Tempel data</strong><span>Salin kunci jawaban dan jawaban peserta dari Excel/Spreadsheet atau CSV; pemisah kolom terdeteksi otomatis.</span></li>
+        <li><strong>Jalankan analisis</strong><span>Proses seluruh indikator butir sekaligus.</span></li>
+        <li><strong>Unduh hasil</strong><span>Simpan laporan lengkap dalam bentuk PDF untuk dokumentasi.</span></li>
       </ol>
     </section>
 
@@ -355,29 +376,36 @@
         <p>Tidak. Cukup buka tautannya di peramban pada komputer maupun ponsel — tanpa pemasangan dan tanpa pendaftaran.</p>
       </details>
       <details>
+        <summary>Soal jenis apa yang bisa dianalisis?</summary>
+        <p>Soal pilihan ganda maupun uraian (essay). Untuk pilihan ganda, aplikasi juga menganalisis kualitas pengecoh pada tiap opsi.</p>
+      </details>
+      <details>
+        <summary>Format data apa yang bisa dimasukkan?</summary>
+        <p>Data dapat ditempel langsung dari Excel atau Spreadsheet (pemisah Tab) maupun dari CSV; pemisah kolom terdeteksi otomatis. Kunci jawaban dan jawaban peserta ditulis dalam huruf A sampai E.</p>
+      </details>
+      <details>
+        <summary>Apakah hasilnya bisa diunduh?</summary>
+        <p>Ya. Laporan lengkap analisis butir soal dapat diunduh dalam bentuk PDF untuk dokumentasi dan pelaporan.</p>
+      </details>
+      <details>
         <summary>Apa bedanya dengan Anates versi desktop?</summary>
-        <p>Versi ini berbasis web sehingga berjalan di perangkat apa pun tanpa instalasi Windows, sementara metrik yang dihitung tetap serupa: validitas, reliabilitas, daya pembeda, dan tingkat kesukaran.</p>
+        <p>Versi ini berbasis web sehingga berjalan di perangkat apa pun tanpa instalasi Windows, sementara indikator yang dihitung tetap lengkap: tingkat kesukaran, daya pembeda, korelasi butir–total, reliabilitas, dan analisis pengecoh.</p>
       </details>
       <details>
         <summary>Apakah data soal saya aman?</summary>
         <p>Seluruh perhitungan berjalan di dalam peramban (sisi klien). Data jawaban tidak diunggah atau dikirim ke server mana pun.</p>
-      </details>
-      <details>
-        <summary>Siapa yang cocok memakai aplikasi ini?</summary>
-        <p>Guru, dosen, mahasiswa, dan peneliti yang perlu memeriksa kualitas butir soal atau instrumen tes secara cepat.</p>
       </details>
     </section>
 
     <section id="lainnya">
       <h2>Aplikasi lain</h2>
       <p class="sub">Alat analisis pendidikan lain yang juga berjalan langsung di peramban.</p>
-      <!-- TODO: bila kamu sudah membuat halaman landing serupa di bawah domainmu, arahkan ke path internal (mis. /analisis-rasch/). -->
       <div class="rel">
-        <a class="tile" href="https://dika-81.github.io/rasa-rasch/" rel="noopener">
+        <a class="tile" href="https://andikaarisetyawan.com/rasa-rasch/" rel="noopener">
           <strong>RASA — Analisis Rasch</strong>
           <span>Analisis model Rasch untuk angket skala Likert: statistik person, item, reliabilitas, dan fit.</span>
         </a>
-        <a class="tile" href="https://dika-81.github.io/analisis-uji-kuantitatif/" rel="noopener">
+        <a class="tile" href="https://andikaarisetyawan.com/analisis-uji-kuantitatif/" rel="noopener">
           <strong>Analisis Uji Kuantitatif</strong>
           <span>Olah data penelitian kuantitatif, parametrik maupun nonparametrik, berdasarkan uji asumsi klasik.</span>
         </a>
@@ -388,7 +416,7 @@
   <section class="close-cta">
     <h2>Siap menganalisis soal Anda?</h2>
     <p>Buka aplikasi dan mulai memeriksa kualitas butir soal dalam hitungan menit.</p>
-    <a class="btn btn-primary" href="https://dika-81.github.io/anates-html/" rel="noopener">Buka Anates Online</a>
+    <a class="btn btn-primary" href="https://andikaarisetyawan.com/anates-html/" rel="noopener">Buka Anates Online</a>
   </section>
 </main>
 
